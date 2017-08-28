@@ -15,4 +15,4 @@ Functionalities
 3. Teachers will fill the attendence daily as per classes and it would be reflected on the student dashboard
 
 databses
-the file with sql extensions are databases required for functioning of above design
+1.the file with sql extensions are databases required for functioning of above design

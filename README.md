@@ -13,3 +13,6 @@ Functionalities
 1. Student Have to Register before the Semister.
 2. Teacher will be given login details by Admin.
 3. Teachers will fill the attendence daily as per classes and it would be reflected on the student dashboard
+
+databses
+the file with sql extensions are databases required for functioning of above design

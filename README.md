@@ -6,7 +6,7 @@ Steps to Start
 1. Open Xamp
 2. Start MySQL and apache server 
 3. Inside Xamp folder(generally located in C drive) Create a new Folder named WEBD inside HTDOCS Folder and paste all the files there.
-4. Open your Favorite browser and type localhost/HTDOCS/WEBD/index.php
+4. Open your Favorite browser and type localhost/WEBD/index.php
 5. Your application has started now
 
 Functionalities 

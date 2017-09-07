@@ -14,5 +14,13 @@ Functionalities
 2. Teacher will be given login details by Admin.
 3. Teachers will fill the attendence daily as per classes and it would be reflected on the student dashboard
 
-databses
+Database
+
 1.the file with sql extensions are databases required for functioning of above design
+
+front-end
+
+1.based on Material design bootstrap(https://mdbootstrap.com/getting-started/)
+
+- css cdn file https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css
+- js cdn file https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js

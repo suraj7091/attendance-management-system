@@ -65,53 +65,7 @@ if (h==null || h=="")
 
 <title>registration</title>
 <style>
-.container
-{
-border:3px solid #33CC66;
-}
-input[type=text],input[type=password]
-{
-width:90%;
-padding:10px 10px;
-margin:18px;
-display:inline-block;
-border:1px solid #333399
-box sizing:border-box;
-}
-.file-upload {
-  position:relative;
-  overflow: hidden;
-  margin-left:0px;
- }
-.file-upload input.fileinput {
-  position: absolute;
-  padding: 0;
-  left:0px;
-  font-size: 200px;
-  cursor: pointer;
-  opacity:0;
-  filter: alpha(opacity=0); }
-.img{
-margin-left:300px;
-}
-button
-{
-margin-left:0px;
-    background-color:#83F3BD;width:91%;
-	height:40px
-}
-.submit
-{
-width:500px;
-}
-.cancel
-{
-width:500px;
-}
-button:hover
-{
-opacity:0.8;
-}
+
 </style>
 </head>
 

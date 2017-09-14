@@ -1,154 +1,182 @@
 <?php
- 
+
 ?>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript">
-function validateForm()
-{
-	  var input,file;
-    input=document.getElementById("fileinput");
-        file=input.files[0];   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-var a=document.forms ["reg"]["fname"].value;
-var b=document.forms["reg"]["lname"].value;
-var c=document.forms["reg"]["roll_no"].value;
-var d=document.forms["reg"]["college"].value;
-var g=document.forms["reg"]["confirm"].value;
-var h=document.forms["reg"]["password"].value;
-if (a==null || a=="")
-  {
-  alert("First name must be filled out");
-  
-  return false;
-  }
-if (b==null || b=="")
-  {
-  alert("Last name must be filled out");
-  return false;
-  }
-if (c==null || c=="")
-  {
-  alert("roll no must be filled out");
-  return false;
-  }
-if (d==null || d=="")
-  {
-  alert("college name must be filled out");
-  return false;
-  }
-
-if (g!=h )
-  {
-  alert("password not matched");
-  return false;
-  }
-if (h==null || h=="")
-  {
-  alert("password must be filled out");
-  return false;
-  }
-  if(h.length<8)
-  {
-  alert("password must be of 8 char length");
-  return false;
-  }
-  if(file.size>409600)
-{
-	alert(" file size should be smaller than 400 kb");
-	return false;
-}
-}
-</script>
-
-<title>registration</title>
-<style>
-
-</style>
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/mdb.css" rel="stylesheet">
+    <link href="css/compile.min.css" rel="stylesheet">
+	
+    <style rel="stylesheet"> 
+        main {
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+        }
+		
+		.avatar-pic {
+  			width: 150px;
+		}             
+    </style>
 </head>
 
 <body>
-<div class="container">
-<div class="image">
-<img src="register.png" width="30%" class="img"/>
-</div>
-<form name="reg" id="register" action="code_exec.php" onSubmit="return validateForm()" method="post" enctype="multipart/form-data">
-<table width="1195" height="460" border="0" align:"center" cellpadding="0" cellspacing="0">
-  
-  <tr>
-    <td width="95"><div align="right">First Name:</div></td>
-    <td width="1100"><input type="text" name="fname" placeholder="firstname" /></td>
-  </tr>
-  <tr>
-    <td><div align="right">Last Name:</div></td>
-    <td><input type="text" name="lname" placeholder="last name"  /></td>
-  </tr>
-  <tr>
-  <td><div align="right">your image:</div></td>
-  <td><div style="margin-left:20px;"><button class="file-upload" >            
-  <input type="file" class="fileinput" name="userfile" id="fileinput">choose file</button>
-</div></td>
-  </tr>
-  <tr>
-    <td><div align="right">Enrollment no:</div></td>
-    <td><input type="text" name="roll_no" placeholder="roll no"  /></td>
-  </tr>
 
- 
-  <tr>
-    <td><div align="right">College:</div></td>
-    <td><input type="text" name="college" placeholder="e.g:University school of information technology"  /></td>
-  </tr>
-  <tr>
-    <td><div align="right">Stream:</div></td>
-    <td><select name="stream" id="stream" style="width:90%;
-padding:10px 10px;
-margin:18px;
-display:inline-block;
-border:1px solid #333399">
-<option value="cse" selected>cse</option>
-<option value="ece">ece</option>
-<option value="it">it</option>
-<option value="bce">bce</option>
-<option value="ct">ct</option>
-</select></td>
-  </tr>
-  <tr>
-    <td><div align="right">Semester:</div></td>
-    <td><select id="semester" name="semester" style="width:90%;
-padding:10px 10px;
-margin:18px;
-display:inline-block;
-border:1px solid #333399">
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-</select></td>
-  </tr>
- 
- <tr>
-    <td><div align="right">Password:</div></td>
-    <td><input type="password" name="password" placeholder="Must be of length 8 charracter" /></td>
-  </tr>
-  <tr>
-    <td><div align="right">confirm password:</div></td>
-    <td><input type="password" name="confirm"  /></td>
-  </tr>
-</table>
-<table style="background-color:#006666 ;"><tr>
-    <td  style="width:500px;"><button  type="submit" name="submit" value="Submit"   style="background-color:#336600; color:white;padding:10px 20px;margin:18px 12px;cursor:pointer;border:1px solid #003333;width:40%;margin-left:20px">submit</button></td>
-	<td style="width:700px;"><button type="button" class="cancel"  style="background-color:#336600; color:white;padding:10px 20px;margin:18px 12px;cursor:pointer;border:1px solid #003333;width:30%; margin-left:380px;"><a href="login.php">login</a></button></td></tr>
-	</table>
-</form>
-</div>
- 	
+<main>
+    <div class="container">
+        <div class="row">
+			<div class="col-md-2"></div>
+            <div class="col-md-8 mb-r">
+				<div class="card">
+					<div class="card-body">
+						<!--Header-->
+						<div class="text-center">
+                			<h3 class="pink-text mb-5"><strong>Register</strong></h3>
+						</div>
+						<!--form-->
+						<form name="reg" id="register" action="code_exec.php" onSubmit="return validateForm()" method="post" enctype="multipart/form-data">
+							
+							<div class="row">
+								<div class="col-md-5"></div>
+								<div class="file-field">
+									<div class="mb-4">
+										<img src="https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg" class="rounded-circle z-depth-1-half avatar-pic">
+									</div>
+									<div class="d-flex justify-content-center">
+										<div class="btn btn-mdb-color btn-rounded">
+											<span>Add photo</span>
+											<input type="file" class="fileinput" name="userfile" id="fileinput">
+										</div>
+									</div>
+								</div>	
+							</div>		
+							
+							<div class="row">
+								<div class="col-md-6">
+									<div class="md-form">                     
+										<input id="fname" class="form-control" type="text" name="fname" required>
+										<label for="fname">First Name</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="md-form">                     
+										<input id="lname" class="form-control" type="text" name="lname" required>
+										<label for="lname">Last Name</label>
+									</div>
+								</div>
+							</div><!--form row-->					
+							
+							<div class="md-form">                     
+								<input id="roll" class="form-control" type="text" name="roll_no" type="number" required>
+								<label for="roll">Enrollment #</label>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-4">
+									<div class="md-form">                     
+										<input id="school" class="form-control" type="text" name="school" required>
+										<label for="school">University School</label>
+									</div>
+								</div>						
+								<div class="col-md-4">
+									<div class="md-form">
+										<select name="stream" class="mdb-select">
+											<option value="" disabled selected>Stream</option>
+											<option value="1">CSE</option>
+											<option value="2">ECE</option>
+											<option value="3">IT</option>
+										</select>
+										<!--label>Stream</label-->
+									</div>						
+								</div>
+								<div class="col-md-4">
+									<select name="semester" class="mdb-select">
+										<option value="" disabled selected>Semester</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+									</select>
+									<!--label>Semester</label-->
+								</div>					
+							</div>
+
+							<div class="row">
+								<div class="col-md-6">
+									<div class="md-form">                     
+										<input id="password" class="form-control" type="password" name="password" required>
+										<label for="password">Password</label>
+										<small class="text-muted">
+											Must be 8-20 characters long.
+										</small>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="md-form">                     
+										<input id="confirm" class="form-control" type="password" name="confirm" required>
+										<label for="confirm">Confirm Password</label>
+									</div>
+								</div>					
+							</div><!--row-->
+														
+							<div class="text-center">
+								<button type="submit" name="submit" class="btn btn-default waves-effect waves-light" onclick="toastr.info('Hi! I am info message.');">Submit</button>									
+								<a href="login.php" class="btn btn-deep-orange waves-effect waves-light">Login</a>
+							</div>							
+														
+							<div class="text-center">
+								<div id="status"></div>
+							</div>
+
+						</form>
+					</div><!--card-body-->
+				</div><!--card-->
+            </div><!--col-md-8-->
+        </div><!--row-->
+    </div>
+</main>
+
+<!--Footer-->
+<!--/.Footer-->
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
+</script>
+
+<script>
+	//Material select
+	$(document).ready(function() {
+    	$('.mdb-select').material_select();
+  	});
+</script>
+
+<script>
+	function validateForm() {	
+		var confirm = $('#confirm').value;
+		var password = $('#password').value;
+		if (password!=confirm){
+			alert("password not matched");
+  			return false;
+		}
+					
+		document.getElementById('status').innerHTML = "Sending...";
+		document.getElementById('register').submit();
+	}
+</script>
+
 </body>
-
 </html>

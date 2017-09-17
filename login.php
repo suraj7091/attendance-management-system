@@ -78,7 +78,7 @@ if(isset($_SESSION['SESS_FIRST_NAME'])&&!isset($_SESSION['SESS_FIRST_NAME'])) {
                                 <p>Forgot <a href="#">Password?</a></p>
                             </div>
                         </div>
-                    </div>
+                    </div><!--card-->
                     <!--/Form without header-->           
                 </div><!--col-->
             </div><!--row-->

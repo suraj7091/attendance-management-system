@@ -82,23 +82,23 @@
 							<div class="row">
 								<div class="col-md-4">
 									<div class="md-form">                     
-										<input id="school" class="form-control" type="text" name="school" required>
-										<label for="school">University School</label>
+										<input id="college" class="form-control" type="text" name="college" required>
+										<label for="college">University School</label>
 									</div>
 								</div>						
 								<div class="col-md-4">
 									<div class="md-form">
-										<select name="stream" class="mdb-select">
+										<select name="stream" id ="stream" class="mdb-select">
 											<option value="" disabled selected>Stream</option>
-											<option value="1">CSE</option>
-											<option value="2">ECE</option>
-											<option value="3">IT</option>
+											<option value="cse">CSE</option>
+											<option value="ece">ECE</option>
+											<option value="it">IT</option>
 										</select>
 										<!--label>Stream</label-->
 									</div>						
 								</div>
 								<div class="col-md-4">
-									<select name="semester" class="mdb-select">
+									<select name="semester" id="semester" class="mdb-select">
 										<option value="" disabled selected>Semester</option>
 										<option value="1">1</option>
 										<option value="2">2</option>

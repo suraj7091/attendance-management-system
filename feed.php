@@ -93,11 +93,11 @@ while($row1 = mysqli_fetch_array($result1))
 				echo'<div style="float:left;"> ';
 			echo $i,'.';
 		
-		echo $row1[0];
+		echo $row1[0],' ',$row1[1];
 		echo str_repeat('&nbsp;',20);
-		echo $row1[3],' ',$row1[4];
+		echo $row1[3],' ';
 		echo'</div>';
-echo'<div align="right" style="margin-right:100px;"><select id="'.$row1[0].'" name="'.$row1[0].'" style="width:30%;
+echo'<div align="right" style="margin-right:100px;"><select id="'.$row1[3].'" name="'.$row1[3].'" style="width:30%;
 padding:10px 10px;
 margin-top:10px;
 margin-left:50px;

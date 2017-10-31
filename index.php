@@ -18,8 +18,8 @@
 	
     <style rel="stylesheet"> 
         main {
-            padding-top: 3rem;
-            padding-bottom: 2rem;
+            padding-top: 5rem;
+            padding-bottom: 1rem;
         }
 		
 		.avatar-pic {

@@ -26,7 +26,7 @@ if(isset($_SESSION['SESS_FIRST_NAME'])&&!isset($_SESSION['SESS_FIRST_NAME'])) {
         } 
         main {
             padding-top: 4rem;
-            padding-bottom: 1rem;
+            padding-bottom: 2rem;
         }
     </style>
 </head>

@@ -17,8 +17,8 @@ border-radius:30%;
 .buttons
 {
 	background-color:#00FFCC	;
-	width:300px;
-	height:50px;
+	width:290px;
+	height:70px;
 	margin-top:20px;
 }
 .second

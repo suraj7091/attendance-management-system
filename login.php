@@ -25,8 +25,8 @@ if(isset($_SESSION['SESS_FIRST_NAME'])&&!isset($_SESSION['SESS_FIRST_NAME'])) {
             background-image: url('http://edusources.in/educampus/img/USICT.jpg');
         } 
         main {
-            padding-top: 3rem;
-            padding-bottom: 2rem;
+            padding-top: 4rem;
+            padding-bottom: 1rem;
         }
     </style>
 </head>

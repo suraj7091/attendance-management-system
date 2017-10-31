@@ -1,5 +1,5 @@
 # attendance-management-system
-online attendance management
+Online attendance management
 
 This system starts on Xamp Server 
 Steps to Start 
@@ -24,3 +24,5 @@ front-end
 
 - css cdn file https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/css/mdb.min.css
 - js cdn file https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.2/js/mdb.min.js
+
+Gear Up and use the project

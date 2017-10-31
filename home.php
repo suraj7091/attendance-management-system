@@ -11,8 +11,8 @@ if(!isset($_SESSION['SESS_FIRST_NAME'])) {
 <title>WELCOME TO ATTENDENACE</title>
 <style>
 .buttons{
-margin-left:10px;
-margin-top:15px;
+margin-left:11px;
+margin-top:16px;
 border:1px solid #009999;
 border-radius:4px;
 color:#993300;

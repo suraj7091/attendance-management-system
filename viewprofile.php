@@ -7,8 +7,8 @@
 
 .first
 { 
-border:3px solid #0A3924;
-font-size:25px;
+border:4px solid #0A3924;
+font-size:26px;
 }
 .image
 {
